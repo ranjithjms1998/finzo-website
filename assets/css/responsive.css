@@ -1,0 +1,93 @@
+/* ==========================================================================
+   FINZO FINANCIAL SERVICES — Responsive Overrides
+   ========================================================================== */
+
+/* Large desktops / laptops */
+@media (max-width: 1199.98px) {
+  .hero-media img { height: 480px; }
+  .emi-inputs, .emi-results { padding: 38px 32px; }
+}
+
+/* Tablets */
+@media (max-width: 991.98px) {
+  .hero-section { min-height: auto; padding-top: 130px; padding-bottom: 60px; text-align: center; }
+  .hero-cta { justify-content: center; }
+  .hero-desc { margin-left: auto; margin-right: auto; }
+  .hero-media { margin-top: 46px; }
+  .hero-media img { height: 400px; }
+  .hero-shape--1, .hero-shape--2, .hero-shape--3 { display: none; }
+
+  .trust-strip { margin-top: 40px; }
+
+  .about-media img { height: 400px; }
+  .about-media-badge { padding: 16px 20px; }
+
+  .why-panel { padding: 40px 30px; margin-top: 30px; }
+
+  .emi-results { border-radius: 0 0 var(--radius-lg) var(--radius-lg); }
+  .emi-inputs { border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+
+  .cta-section { padding: 50px 30px; }
+
+  .finzo-form-card { padding: 34px 26px; }
+
+  .approach-strip { margin-top: 50px; }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 767.98px) {
+  .section-padding { padding: 60px 0; }
+  .section-padding-sm { padding: 42px 0; }
+
+  .hero-title { font-size: 2rem; }
+  .hero-desc { font-size: 1rem; }
+  .hero-cta .btn { width: 100%; }
+  .hero-floating-card { flex-direction: column; text-align: center; left: 16px; right: 16px; bottom: 16px; }
+
+  .page-hero { padding: 150px 0 60px; text-align: center; }
+  .page-hero p { margin-left: auto; margin-right: auto; }
+
+  .service-card { padding: 28px 22px; }
+  .service-card .card-actions .btn { flex: 1; text-align: center; }
+
+  .timeline-step { flex-direction: column; text-align: center; align-items: center; }
+  .timeline-step .step-circle { margin: 0 auto 18px; }
+  .timeline-track::before { left: 34px; }
+
+  .emi-inputs, .emi-results { padding: 30px 22px; }
+
+  .contact-card { padding: 26px 18px; }
+
+  .finzo-footer { text-align: center; padding-top: 56px; }
+  .finzo-footer h5::after { left: 50%; transform: translateX(-50%); }
+  .footer-social { justify-content: center; }
+  .footer-contact-item { justify-content: center; text-align: left; }
+}
+
+/* Phones */
+@media (max-width: 575.98px) {
+  .hero-title { font-size: 1.75rem; }
+  .section-title { font-size: 1.6rem; }
+  .hero-media img { height: 300px; }
+
+  .finzo-logo__emblem { width: 40px; height: 40px; }
+  .finzo-logo__text strong { font-size: 1.05rem; }
+  .finzo-logo__text small { font-size: 0.52rem; }
+
+  .trust-card, .contact-card, .feature-block { padding: 24px 16px; }
+
+  .emi-donut { width: 130px; height: 130px; }
+  .emi-donut::before { width: 92px; height: 92px; }
+
+  .cta-section h2 { font-size: 1.5rem; }
+  .cta-section .cta-actions .btn { width: 100%; }
+
+  .finzo-form-card { padding: 26px 18px; }
+
+  .about-media img { height: 320px; }
+  .about-media-badge strong { font-size: 1.25rem; }
+}
+
+/* Guard against any accidental overflow */
+html, body { max-width: 100%; overflow-x: hidden; }
+.container, .container-fluid { max-width: 100%; }

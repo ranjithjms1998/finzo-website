@@ -1,0 +1,16 @@
+# Composer dependencies for the public site (PHPMailer) — restore with
+# `composer install`. The admin/ CodeIgniter app has its own vendor/,
+# excluded by admin/.gitignore.
+/vendor/
+
+# Contains a real SMTP password when filled in — never commit this.
+# Copy mail/config.example.php to mail/config.php and fill in real values
+# after cloning.
+mail/config.php
+
+# Claude Code session state — not part of the website.
+/.claude/
+
+# OS junk
+.DS_Store
+Thumbs.db
